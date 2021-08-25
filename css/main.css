@@ -1,0 +1,277 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+body {
+  background-color: white;
+  font-size: 20px;
+  font-family: "Libre Franklin";
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .main {
+  width: 90%;
+  padding-top: 8em;
+  padding-bottom: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1440px) {
+  body .main {
+    padding-top: 2em;
+    padding-bottom: 0em;
+  }
+}
+
+body .main .header #logo {
+  width: 70px;
+  height: auto;
+}
+
+@media (min-width: 1440px) {
+  body .main .header #logo {
+    width: 100px;
+  }
+}
+
+body .main .article .title {
+  color: #969696;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 1440px) {
+  body .main .article .title {
+    font-size: 50px;
+  }
+}
+
+body .main .article .title .highlight {
+  color: #151f29;
+  font-weight: 700;
+}
+
+body .main .article .paragraph {
+  color: #151f29;
+  font-weight: 300;
+  text-align: center;
+  font-size: 17px;
+}
+
+@media (min-width: 1440px) {
+  body .main .article .paragraph {
+    font-size: 21px;
+  }
+}
+
+body .main .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 1em;
+}
+
+@media (min-width: 1440px) {
+  body .main .email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    position: relative;
+  }
+}
+
+body .main .email #email_input {
+  border: #c2d3ff 1px solid;
+  border-radius: 1.5rem;
+  padding: 0.8rem 6rem;
+  padding-left: 2em;
+  text-align: start;
+}
+
+@media (min-width: 1440px) {
+  body .main .email #email_input {
+    padding: 1.2rem 13rem;
+    padding-left: 2em;
+    border-radius: 2.2rem;
+  }
+}
+
+body .main .email .error_text {
+  display: none;
+  color: #ff5263;
+  font-weight: 300;
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media (min-width: 1440px) {
+  body .main .email .error_text {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 30px;
+  }
+}
+
+body .main .email .button {
+  background-color: #4f7df3;
+  border: #4f7df3 1px solid;
+  border-radius: 1.5rem;
+  padding: 0.8rem 7.6rem;
+  margin: 1em 0 5em 0;
+}
+
+@media (min-width: 1440px) {
+  body .main .email .button {
+    padding: 1.2rem 3.5rem;
+    margin-left: 1em;
+    border-radius: 2.2rem;
+  }
+}
+
+body .main .email .button__text {
+  color: white;
+  font-weight: 600;
+}
+
+@media (min-width: 1440px) {
+  body .main .email .button__text {
+    font-size: 17px;
+  }
+}
+
+body .main .email .button:hover {
+  background-color: #c2d3ff;
+  border-color: #c2d3ff;
+}
+
+body .main .illustration #illustration_image {
+  width: 330px;
+  height: auto;
+}
+
+@media (min-width: 1440px) {
+  body .main .illustration #illustration_image {
+    width: 600px;
+  }
+}
+
+body .main .footer {
+  text-align: center;
+  padding-top: 5em;
+}
+
+@media (min-width: 1440px) {
+  body .main .footer {
+    padding-top: 2em;
+  }
+}
+
+body .main .footer .icons {
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .main .footer .icons .cerc {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.4em;
+  border: #969696 0.09em solid;
+  border-radius: 50%;
+}
+
+body .main .footer .icons .cerc #facebook {
+  width: 11px;
+  height: auto;
+  -webkit-filter: invert(46%) sepia(88%) saturate(2566%) hue-rotate(207deg) brightness(96%) contrast(98%);
+          filter: invert(46%) sepia(88%) saturate(2566%) hue-rotate(207deg) brightness(96%) contrast(98%);
+}
+
+body .main .footer .icons .cerc #twitter, body .main .footer .icons .cerc #instagram {
+  width: 15px;
+  height: auto;
+  -webkit-filter: invert(46%) sepia(88%) saturate(2566%) hue-rotate(207deg) brightness(96%) contrast(98%);
+          filter: invert(46%) sepia(88%) saturate(2566%) hue-rotate(207deg) brightness(96%) contrast(98%);
+}
+
+body .main .footer .icons #cerc1:hover, body .main .footer .icons #cerc2:hover, body .main .footer .icons #cerc3:hover {
+  background-color: #4f7df3;
+}
+
+body .main .footer .icons #cerc1:hover #facebook, body .main .footer .icons #cerc1:hover #twitter, body .main .footer .icons #cerc1:hover #instagram, body .main .footer .icons #cerc2:hover #facebook, body .main .footer .icons #cerc2:hover #twitter, body .main .footer .icons #cerc2:hover #instagram, body .main .footer .icons #cerc3:hover #facebook, body .main .footer .icons #cerc3:hover #twitter, body .main .footer .icons #cerc3:hover #instagram {
+  -webkit-filter: invert(96%) sepia(96%) saturate(16%) hue-rotate(253deg) brightness(104%) contrast(105%);
+          filter: invert(96%) sepia(96%) saturate(16%) hue-rotate(253deg) brightness(104%) contrast(105%);
+}
+
+body .main .footer__text {
+  color: #969696;
+  font-size: 11px;
+  font-weight: 300;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,179 @@
+@import './variables';
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color: white;
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $regular-weight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .main{
+        width: 90%;
+        padding-top: 8em;
+        padding-bottom: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media (min-width: $desktop-size){
+            padding-top: 2em;
+            padding-bottom: 0em;
+        }
+        .header{
+            #logo{
+                width: 70px;
+                height: auto;
+                @media (min-width: $desktop-size){
+                    width: 100px;
+                }
+            }
+        }
+        .article{
+            .title{
+                color: $neutral-color-gray;
+                font-weight: $small-weight;
+                text-align: center;
+                letter-spacing: -1px;
+                @media (min-width: $desktop-size){
+                    font-size: $font-size + 30px;
+                }
+                .highlight{
+                    color: $neutral-color-very-dark-blue;
+                    font-weight: $big-weight;
+                }
+            }
+            .paragraph{
+                color: $neutral-color-very-dark-blue;
+                font-weight: $small-weight;
+                text-align: center;
+                font-size: $font-size - 3px;
+                @media (min-width: $desktop-size){
+                    font-size: $font-size + 1px;
+                }
+            }
+        }
+        .email{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 1em;
+            @media (min-width: $desktop-size){
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                position: relative;
+            }
+            #email_input{
+                border: $secondary-color-pale-blue 1px solid;
+                border-radius: 1.5rem;
+                padding: 0.8rem 6rem;
+                padding-left: 2em;
+                text-align: start;
+                @media (min-width: $desktop-size){
+                    padding: 1.2rem 13rem;
+                    padding-left: 2em;
+                    border-radius: 2.2rem;
+                }
+            }
+            .error_text{
+                display: none;
+                color: $secondary-color-light-red;
+                font-weight: $small-weight;
+                font-size: $font-size - 8px;
+                font-style: italic;
+                @media (min-width: $desktop-size){
+                    display: none;
+                    position: absolute;
+                    top: 90px;
+                    left: 30px;
+                }
+            }
+            .button{
+                background-color: $primary-color-blue;
+                border: $primary-color-blue 1px solid;
+                border-radius: 1.5rem;
+                padding: 0.8rem 7.6rem;
+                margin: 1em 0 5em 0;
+                @media (min-width: $desktop-size){
+                    padding: 1.2rem 3.5rem;
+                    margin-left: 1em;
+                    border-radius: 2.2rem;
+                }
+                &__text{
+                    color: white;
+                    font-weight: $regular-weight;
+                    @media (min-width: $desktop-size){
+                        font-size: $font-size - 3px;
+                    }
+                }
+            }
+            .button:hover{
+                background-color: $secondary-color-pale-blue;
+                border-color: $secondary-color-pale-blue;
+            }
+        }
+        .illustration{
+            #illustration_image{
+                width: 330px;
+                height: auto;
+                @media (min-width: $desktop-size){
+                    width: 600px;
+                }
+            }
+        }
+        .footer{
+            text-align: center;
+            padding-top: 5em;
+            @media (min-width: $desktop-size){
+                padding-top: 2em;
+            }
+            .icons{
+                padding-bottom: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                .cerc{
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0.4em;
+                    border: $neutral-color-gray 0.09em solid;
+                    border-radius: 50%;
+                    #facebook{
+                        width: 11px;
+                        height: auto;
+                        filter: invert(46%) sepia(88%) saturate(2566%) hue-rotate(207deg) brightness(96%) contrast(98%);
+                    }
+                    #twitter, #instagram{
+                        width: 15px;
+                        height: auto;
+                        filter: invert(46%) sepia(88%) saturate(2566%) hue-rotate(207deg) brightness(96%) contrast(98%);
+                    }
+                }
+                #cerc1:hover, #cerc2:hover, #cerc3:hover{
+                    background-color: $primary-color-blue;
+                    #facebook, #twitter, #instagram{
+                        filter: invert(96%) sepia(96%) saturate(16%) hue-rotate(253deg) brightness(104%) contrast(105%);
+                    }
+                }
+            }
+            &__text{
+                color: $neutral-color-gray;
+                font-size: $font-size - 9px;
+                font-weight: $small-weight;
+            }
+        }
+    }
+}
